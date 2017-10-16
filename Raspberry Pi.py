@@ -28,7 +28,7 @@ def input_key_times():
 def input_key_clicks():
     key_clicks = input('please input the times of click keys: ')
     while True:
-        if key_clicks.isdigit() and (int (key_clicks) in range(1, 5)) :
+        if key_clicks.isdigit() and (int (key_clicks)>0) :
             return int(key_clicks)
             break
         else:
